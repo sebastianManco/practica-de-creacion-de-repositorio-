@@ -13,4 +13,17 @@ git status: muestra si el archivo está en memoria  o no
 git add "nombre del archivo": trackea el archuvi
 git rm --cached: borra lo archivos que estan en memoria 
 
+<!----.------------------------- antes de crear el commit hay que iniciar con emailand name----------------->
+
+git config: todas las configuraciones 
+git --list: configuracion por defecto 
+git --list --show--origin: se pueden las configuraciones guardadas 
+git config --global user.name "nombre"
+git config --global user.email "email"
+
+git commit -m "comentario"
+
+
+<!--- --------------- siempre para agregar un commit hay que empezar desde <<git add>>>----------------------------------->
+
 code "nombre del archivo": abre el archivo en VS Code
