@@ -1,0 +1,14 @@
+cd: se abre un carpeta nueva 
+mkdir: crea carpetas 
+ls: lista los archivos que hay por defecto 
+ls -al: todos los archivos en una lista 
+ls -a solo muestra un grupo de archivos 
+clear: limpia la consola (ctrl+l)
+cat: abre los archivos en consola 
+
+comandos con git 
+
+git init: se agrega git al proyecto 
+git status: muestra si el archivo está en memoria  o no 
+git add "nombre del archivo": trackea el archuvi
+git rm --cached: borra lo archivos que estan en memoria 
