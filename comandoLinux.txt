@@ -31,3 +31,7 @@ code "nombre del archivo": abre el archivo en VS Code
 
 git log "nombre del archivo": se verifica el historial del archivo 
 git show "nombre del archivo": los cambios que se le han hecho al docuento.
+git log "nombre del archivo": se verifica el historial del archivo 
+git show "nombre del archivo": los cambios que se le han hecho al docuento.7
+
+pdw: hace el recordatorio de la direccion  en la que nos encontramos
