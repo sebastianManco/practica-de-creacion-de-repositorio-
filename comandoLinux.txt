@@ -1,4 +1,5 @@
 cd: se abre un carpeta nueva 
+cd ..: se devuelve a la carpeta anterior 
 mkdir: crea carpetas 
 ls: lista los archivos que hay por defecto 
 ls -al: todos los archivos en una lista 
@@ -35,3 +36,22 @@ git log "nombre del archivo": se verifica el historial del archivo
 git show "nombre del archivo": los cambios que se le han hecho al docuento.7
 
 pdw: hace el recordatorio de la direccion  en la que nos encontramos
+
+<!-----------------------------para volver a las versiones anteriores----------------------------------->
+
+git reset  dbf72997d1248472824bcf3809314fcec23704fb --hard:  este borra todas leas versiones y solo queda la elejida 
+git reset  dbf72997d1248472824bcf3809314fcec23704fb --soft:  vuelve a la version anterior pero conservasevando todas las veriones 
+git diff:  muestra los cambios que se tienen guardados en memoria, sin hacer el commit vs los cambios que tiene aun sin trackear
+git log --stat: permite ver los cambios espesificos des pues de cada commit 
+git chekout dbf72997d1248472824bcf3809314fcec23704fb "nombre del archivo que se quiere de regreso": este comando nos devuelve al commmit deseado, pero hay que tener cuidado porque si se realiza un commit se perderan las veriones posteriores
+git chekout master "nombre del archivo" ya me regresa al ultimo commit sin perder nada de la informacion 
+git rm --cached: Elimina los archivos del área de Staging y del próximo commit pero los mantiene en nuestro disco duro.
+git rm --force: Elimina los archivos de Git y del disco duro. Git siempre guarda todo.
+
+<!---------------crear nuevas ramas------------------------------------------->
+
+git brach "nombre": este crea nuestra nueva ramas del proyecto 
+git checkout "nombre de la rama": cambia a la segunda rama y apartir de aqui los commit guardados solo se veran en esta rama; la rama master o principal quedará quieta en su última versión 
+
+
+ 
