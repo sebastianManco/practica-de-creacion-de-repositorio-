@@ -69,3 +69,5 @@ git checkout "nombre de la rama": cambia a la segunda rama y apartir de aqui los
 
 git merge "nombre de la rama"  "nombre commit": pra realizar este comando hay que estar posicionado en la rama principal, este a demás de unir las dos ramas cra un nuevo commit, por lo que se hace necesario crearlo con un mensaje
  
+
+cambios realizados desde github.
