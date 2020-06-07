@@ -79,5 +79,19 @@ git remote -v:
 git push origin master: con esto agrego a a github todos los cambios hechos en el protyecto 
 git pull origin master: con esto agrego a mi repositorio los cambios hechos desde github
 
-aqui lo estoy utilizando desde el github al repositorio local 
-aqui estoy utilizando el nuevo protocolo de seguridad ssh wuuuuuu
+			-------------------------------------------------recomendacion: antes de hacer cualquier accion, realizar el git pull origin master
+						------------------------- para traer todo lo que esta guardado en internet
+
+
+<----------------manejo y nombramiento de versiones (tag)------------------->
+
+git log --all --graph --decorate --oneline: con este comando muestro el arbol de hostiral commits hechos tanto en la rama principal como en las ramas secundarias. se  puede abreviar con un alias asi: alias nombre="git log --all --graph --decorate --oneline:"
+git tag -a v0.01 -m "comentario" hahs del commit
+git tag: observo los tag creados en mi proyecto
+git show.ref --tagsgit log --all --graph --decorate --oneline::este sirve para saver a que commit estan conectados los tag
+git push origin --tags: con esto enviamos al repositorio de github los tags creados 
+git tag -d "nombre del tag": con este comando se borran los tag no deseados, solamente del repositorio local
+git push origin :refs/tags/nombre del tag: con este comando se borra el tag del github
+
+
+
