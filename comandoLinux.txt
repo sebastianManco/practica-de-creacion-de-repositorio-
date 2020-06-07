@@ -7,7 +7,7 @@ ls -a solo muestra un grupo de archivos
 clear: limpia la consola (ctrl+l)
 cat: abre los archivos en consola 
 
-comandos con git 
+<-----------creando el repositorio------------->
 
 git init: se agrega git al proyecto 
 git status: muestra si el archivo está en memoria  o no 
@@ -23,6 +23,11 @@ git config --global user.name "nombre"
 git config --global user.email "email"
 
 git commit -m "comentario"
+
+<-------------------en terotia------------->
+al inciar el git estoy agregandolo a mi trabajo working , al ejecutar el comando add me está 
+separando un espacio en memoria "staging" al ejectar el commit ya estoy guardando mi archivo
+en la rama "branch".
 
 <!--- --------------- siempre para agregar un commit hay que empezar desde <<git add>>>----------------------------------->
 
