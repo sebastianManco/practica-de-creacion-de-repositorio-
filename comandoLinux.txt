@@ -2,6 +2,7 @@
 git simplemente es una consola de linux instalada en el sistema operativo windows, que no spermite utilizar comandos nativos de dicho SO.
 es utilizada principamente para la creacion de repositorios de archivos, para controlar su sistema de versiones y mucho mas.
 
+<------ comandos básicos------->
 
 cd: se abre un carpeta nueva 
 cd ..: se devuelve a la carpeta anterior 
@@ -12,7 +13,6 @@ ls -a solo muestra un grupo de archivos
 clear: limpia la consola (ctrl+l)
 cat: abre los archivos en consola 
 
-comandos con git 
 
 git init: se agrega git al proyecto 
 git status: muestra si el archivo está en memoria  o no 
@@ -58,5 +58,7 @@ git rm --force: Elimina los archivos de Git y del disco duro. Git siempre guarda
 git branch "nombre": este crea nuestra nueva ramas del proyecto 
 git checkout "nombre de la rama": cambia a la segunda rama y apartir de aqui los commit guardados solo se veran en esta rama; la rama master o principal quedará quieta en su última versión 
 
+<-----------fusión de las dos ramas------------------->
 
+git merge "nombre de la rama"  "nombre commit": pra realizar este comando hay que estar posicionado en la rama principal, este a demás de unir las dos ramas cra un nuevo commit, por lo que se hace necesario crearlo con un mensaje
  
