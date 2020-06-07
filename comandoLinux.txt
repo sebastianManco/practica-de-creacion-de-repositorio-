@@ -79,5 +79,5 @@ git remote -v:
 git push origin master: con esto agrego a a github todos los cambios hechos en el protyecto 
 git pull origin master: con esto agrego a mi repositorio los cambios hechos desde github
 
-
+aqui lo estoy utilizando desde el github al repositorio local 
 aqui estoy utilizando el nuevo protocolo de seguridad ssh wuuuuuu
