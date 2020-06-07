@@ -29,7 +29,7 @@ git --list --show--origin: se pueden las configuraciones guardadas
 git config --global user.name "nombre"
 git config --global user.email "email"
 
-git commit -m "comentario"
+git commit -m "comentario": con esto ya queda en el repositorio el archivo
 
 <-------------------en terotia------------->
 al inciar el git estoy agregandolo a mi trabajo working , al ejecutar el comando add me está 
