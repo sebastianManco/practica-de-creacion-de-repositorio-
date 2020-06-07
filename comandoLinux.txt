@@ -1,3 +1,8 @@
+<--------------definición----------------->
+git simplemente es una consola de linux instalada en el sistema operativo windows, que no spermite utilizar comandos nativos de dicho SO.
+es utilizada principamente para la creacion de repositorios de archivos, para controlar su sistema de versiones y mucho mas.
+
+
 cd: se abre un carpeta nueva 
 cd ..: se devuelve a la carpeta anterior 
 mkdir: crea carpetas 
@@ -50,7 +55,7 @@ git rm --force: Elimina los archivos de Git y del disco duro. Git siempre guarda
 
 <!---------------crear nuevas ramas------------------------------------------->
 
-git brach "nombre": este crea nuestra nueva ramas del proyecto 
+git branch "nombre": este crea nuestra nueva ramas del proyecto 
 git checkout "nombre de la rama": cambia a la segunda rama y apartir de aqui los commit guardados solo se veran en esta rama; la rama master o principal quedará quieta en su última versión 
 
 
