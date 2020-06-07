@@ -76,4 +76,5 @@ git merge "nombre de la rama"  "nombre commit": pra realizar este comando hay qu
 git remote ad origin "enlace de github": al clonar el elace de github con este comando lo quehacemos es decirle a git que guarde nuestros archivos en dicha direccion 
 git remote: el tipo de conexion que tenemos 
 git remote -v: 
-git push origin master: 
+git push origin master: con esto agrego a a github todos los cambios hechos en el protyecto 
+git pull origin master: con esto agrego a mi repositorio los cambios hechos desde github
