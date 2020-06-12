@@ -95,4 +95,4 @@ git push origin :refs/tags/nombre del tag: con este comando se borra el tag del 
 
 
 
-11/06/2020
+11/06/2020d
