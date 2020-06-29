@@ -1,0 +1,98 @@
+<--------------definición----------------->
+git simplemente es una consola de linux instalada en el sistema operativo windows, que no spermite utilizar comandos nativos de dicho SO.
+es utilizada principamente para la creacion de repositorios de archivos, para controlar su sistema de versiones y mucho mas.
+
+<------ comandos básicos------->
+
+cd: se abre un carpeta nueva 
+cd ..: se devuelve a la carpeta anterior 
+mkdir: crea carpetas 
+ls: lista los archivos que hay por defecto 
+ls -al: todos los archivos en una lista 
+ls -a solo muestra un grupo de archivos 
+clear: limpia la consola (ctrl+l)
+cat: abre los archivos en consola 
+
+<-----------creando el repositorio------------->
+
+
+git init: se agrega git al proyecto 
+git status: muestra si el archivo está en memoria  o no 
+git add "nombre del archivo": trackea el archuvi
+git rm --cached: borra lo archivos que estan en memoria 
+
+<!----.------------------------- antes de crear el commit hay que iniciar con email y name----------------->
+
+git config: todas las configuraciones 
+git --list: configuracion por defecto 
+git --list --show--origin: se pueden las configuraciones guardadas 
+git config --global user.name "nombre"
+git config --global user.email "email"
+
+git commit -m "comentario": con esto ya queda en el repositorio el archivo
+
+<-------------------en terotia------------->
+al inciar el git estoy agregandolo a mi trabajo working , al ejecutar el comando add me está 
+separando un espacio en memoria "staging" al ejectar el commit ya estoy guardando mi archivo
+en la rama "branch".
+
+<!--- --------------- siempre para agregar un commit hay que empezar desde <<git add>>>----------------------------------->
+
+code "nombre del archivo": abre el archivo en VS Code
+
+<------- historial de todos los cambias que se le han realizado al archivo------------>
+
+git log "nombre del archivo": se verifica el historial del archivo 
+git show "nombre del archivo": los cambios que se le han hecho al docuento.
+git log "nombre del archivo": se verifica el historial del archivo 
+git show "nombre del archivo": los cambios que se le han hecho al docuento.7
+
+pdw: hace el recordatorio de la direccion  en la que nos encontramos
+
+<!-----------------------------para volver a las versiones anteriores----------------------------------->
+
+git reset  dbf72997d1248472824bcf3809314fcec23704fb --hard:  este borra todas leas versiones y solo queda la elejida 
+git reset  dbf72997d1248472824bcf3809314fcec23704fb --soft:  vuelve a la version anterior pero conservasevando todas las veriones 
+git diff:  muestra los cambios que se tienen guardados en memoria, sin hacer el commit vs los cambios que tiene aun sin trackear
+git log --stat: permite ver los cambios espesificos des pues de cada commit 
+git chekout dbf72997d1248472824bcf3809314fcec23704fb "nombre del archivo que se quiere de regreso": este comando nos devuelve al commmit deseado, pero hay que tener cuidado porque si se realiza un commit se perderan las veriones posteriores
+git chekout master "nombre del archivo" ya me regresa al ultimo commit sin perder nada de la informacion 
+git rm --cached: Elimina los archivos del área de Staging y del próximo commit pero los mantiene en nuestro disco duro.
+git rm --force: Elimina los archivos de Git y del disco duro. Git siempre guarda todo.
+
+<!---------------crear nuevas ramas------------------------------------------->
+
+git branch "nombre": este crea nuestra nueva ramas del proyecto 
+git checkout "nombre de la rama": cambia a la segunda rama y apartir de aqui los commit guardados solo se veran en esta rama; la rama master o principal quedará quieta en su última versión 
+
+<-----------fusión de las dos ramas------------------->
+
+git merge "nombre de la rama"  "nombre commit": pra realizar este comando hay que estar posicionado en la rama principal, este a demás de unir las dos ramas cra un nuevo commit, por lo que se hace necesario crearlo con un mensaje
+ 
+
+
+<----------------------git y github-------------------------->
+
+git remote ad origin "enlace de github": al clonar el elace de github con este comando lo quehacemos es decirle a git que guarde nuestros archivos en dicha direccion 
+git remote: el tipo de conexion que tenemos 
+git remote -v: 
+git push origin master: con esto agrego a a github todos los cambios hechos en el protyecto 
+git pull origin master: con esto agrego a mi repositorio los cambios hechos desde github
+
+			-------------------------------------------------recomendacion: antes de hacer cualquier accion, realizar el git pull origin master
+						------------------------- para traer todo lo que esta guardado en internet
+
+
+<----------------manejo y nombramiento de versiones (tag)------------------->
+
+git log --all --graph --decorate --oneline: con este comando muestro el arbol de hostiral commits hechos tanto en la rama principal como en las ramas secundarias. se  puede abreviar con un alias asi: alias nombre="git log --all --graph --decorate --oneline:"
+git tag -a v0.01 -m "comentario" hahs del commit
+git tag: observo los tag creados en mi proyecto
+git show.ref --tagsgit log --all --graph --decorate --oneline::este sirve para saver a que commit estan conectados los tag
+git push origin --tags: con esto enviamos al repositorio de github los tags creados 
+git tag -d "nombre del tag": con este comando se borran los tag no deseados, solamente del repositorio local
+git push origin :refs/tags/nombre del tag: con este comando se borra el tag del github
+
+
+
+11/06/2020d
